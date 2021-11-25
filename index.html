@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<title>Karan Patel Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+h3 {text-align: center;}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://hdqwalls.com/wallpapers/minimalist-mountains-black-and-white-ap.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://wallpapercave.com/wp/wp5748130.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://www.wallpapertip.com/wmimgs/167-1672928_minimalist-nature.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KARAN <span class="w3-hide-small">PATEL</span> PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Why Computer Science Intrests Me!!</em></p>
+  <p align="justify"> From a young age, mathematical complexity and its integration in technology have always fascinated me. Writing my first line of code,
+	  "Hello World," not only intrigued me to learn more but also motivated me to pursue a career in computer science.
+	  Computer Science matches my interests in math with new emerging technology. The competitive atmosphere at school drives me towards higher excellence while motivating me to learn beyond the curriculum.
+	  Computer science paints the perfect picture for me to explore my passions in many different industries and fields. When I compile all this information together,
+	  I see only one career path.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">My Skill Sets Improvement After Taking This Class:</p>
+  <p class="w3-wide"><i class="fa fa-list-alt"></i>jQuery and SQL</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-keyboard-o"></i>JavaScript</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">200+</span><br>
+    Hours Worked
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">25+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10+</span><br>
+    Modules Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4+</span><br>
+    Years of Experience
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+
+  <div class="w3-content w3-container w3-padding-64" id="Intro-To-HTML">
+    <h3>Intro To HTML</h3>
+
+    <center>
+      <div class="embedded">
+        <script src="https://www.khanacademy.org/computer-programming/ics4u-project-event-invite/5945267137757184/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+
+      <p><br><br>
+	HTML and CSS are used all around the world. Html and CSS are the easiest way to create your first website using real code. Even this website was done using HTML and CSS.  The Khan Academy course certainly helped me clean up my messy code and made it much easier for me to grasp what I was doing well exercising my skills. There were many projects and everything was easy and understandable.
+      <br><br></p>
+     </center>
+	</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Intro-To-JS">
+   <h3>Intro To JS</h3>
+
+  <center>
+    <div class="embedded">
+      <script src="https://www.khanacademy.org/computer-programming/ics4u-project-shooting-star/6485002933452800/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+    </div>
+
+    <p><br><br>
+	Intro to JS was the first Khan Academy module I had ever used and was the beginning of my coding in high school. This Khan Academy module was very beneficial in refreshing my understanding of how to use JavaScript. I had done this module in Grade 9 but a quick run-through helped me grasp all my knowledge from previous years. It was a very easy way to learn game coding Concepts using simple videos and walkthroughs.
+	<br><br></p>
+   </center>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Advanced-JS">
+  <h3>Advanced JS: Games & Visualizations</h3>
+
+  <center><div class="embedded"> <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-memory/4720448616628224/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script></div></center>
+
+  <p><br><br>
+	The Games & Visualizations course was one of the most interesting and enjoyable modules in Khan Academy. Using the Js concepts and content covered in previous modules I was able to create my Games & Visualizations. These Projects were very enjoyable and taught me a lot about the visual aspects of JS.
+    <br><br></p>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Natural-Simulations">
+  <h3>Natural Simulations</h3>
+
+  <center>
+    <div class="embedded">
+      <script src="https://www.khanacademy.org/computer-programming/ics4u-project-asteroids-spaceship/4941939736002560/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+    </div>
+
+    <p><br><br>
+	The Natural Simulations course from Khan Academy really helped to open my eyes and show me just how significant the relationship between math and computer science is. We focused on noise, vectors, randomness and oscillations. The most interesting aspect of this course was the Creature projects, that I had to keep building on at the end of some of the lessons. For both mathematics and the sciences, the knowledge that I gained from this course will be extremely beneficial in the future.
+    <br><br></p>
+   </center>
+ </div>
+
+<div class="w3-content w3-container w3-padding-64" id="Creative-Coding-Project">
+   <h3>Creative Coding Project</h3>
+
+  <center>
+    <div >
+	<img src="images/CreativeCODING.PNG" class="center">
+</div>
+
+    <p><br><br>
+	My Creative Coding project was based on the bubble sort algorithm. Bubble sort is a simple sorting algorithm that repeatedly goes through a list, swapping out items and does so until the list is sorted in the right order. There are other types of sorting algorithms but this is a simple one, to begin with. Using Dan Shiffimans youtube tutorials and website my partner and I were able to create a working visual interpretation of bubble sort.
+    <br><br></p>
+   </center>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Making-Webpages-Interactive">
+   <h3>Making Webpages Interactive</h3>
+
+  <center>
+    <div class="embedded">
+      <script src="https://www.khanacademy.org/computer-programming/spin-off-of-challenge-catwalk/5739980887375872/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+    </div>
+
+    <p><br><br>
+    We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    <br><br></p>
+   </center>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Intro-To-jQuery">
+   <h3>Making Webpages Interactive With jQuery</h3>
+
+  <center>
+    <div class="embedded">
+      <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-interactive-slideshow/4539412219117568/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+    </div>
+
+    <p><br><br>
+	Perhaps Khan Academy's most important course when it comes to web design, this course taught me how to save so much time when working with JavaScript. I learned that jQuery, which is a JavaScript library, thoroughly helps to allow for the use of the DOM (Document Object Model). I was able to learn even more ways to style web pages, as well as use animation to engage potential viewers. While I didn't fully enjoy coding in jQuery, I am certainly able to see and understand just how useful adding and using other JavaScript libraries is. That is the most important principle that I've taken from the Khan Academy JavaScript courses: JavaScript libraries are insanely beneficial add-ons that help to get so many different things done better and more efficiently.
+    <br><br></p>
+   </center>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Intro-to-SQL">
+   <h3>Intro to SQL</h3>
+
+  <center>
+    <div class="embedded">
+      <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-app-impersonator/5762507739185152/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+    </div>
+
+    <p><br><br>
+	The Intro to SQL course from Khan Academy was quite valuable in teaching me how to create and use databases in computer programming. The course gave many useful tricks on how to best create a database and manage the data within it. It taught me how to store, query and change data within an SQL database. Through the four different projects in this course, I was able to design databases that stored many different sets of data. As well, I was then able to use and read the data within those databases. With the knowledge gained from working with SQL, I will be able to create and manage databases with efficiency in the future.
+    <br><br></p>
+   </center>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="Programming">
+   <h3>Computer Science Principles: Programming and Computing Innovations</h3>
+
+  <center>
+
+    <p><br><br>
+	While I wasn't able to fully complete the entirety of the AP Computer Science Principles course from Khan Academy (mostly because they changed the entirety of the course right as I was close to completing it), I gained a lot of knowledge about computers, the internet, algorithms, programming, data and so much more. The course provided a lot of background on how exactly I can do anything with computers and made me appreciate the hardware and software that I am so fortunate enough to have access to. While there was a LOT of information that became overwhelming at times in this course, it helped increase my understanding and appreciation of computer science and technology, which is something that will stay with me in the future.
+	    <br><br></p>
+   </center>
+	</div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://img.travelawaits.com/filter:centercrop/quill/e/e/a/f/5/8/eeaf58673955d6c8f2e973b0715a1782e51e0d6f.jpg?w=800&h=800" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ottawa, CA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 613 000 0000<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kpate1@ocdsb.ca<br>
+      </div>
+      <p>If you want to reach out to me, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
